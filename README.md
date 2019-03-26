@@ -40,7 +40,7 @@ Now we're ready to try to fit our data with Logistic Regression.
 
 1. Use sklearn to fit a [Logistic Regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) to the raw data.  Your target variable should be admittance to graduate school.
 
-2. Once we feel comfortable with our model, we can move on to cross validation.  Use sklearn's [KFold cross validation](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html) and `LogisticRegression` to calculate the average log-loss across a 10 fold cross validation.
+2. Once we feel comfortable with our model, we can move on to cross validation.  Use sklearn's [KFold cross validation](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html) and `LogisticRegression` to calculate the average log-loss across a 10 fold cross validation. Try to gridsearch across various hyperparameters to increase the predictive power of your model.
 
 3. Take some time to try to improve the models predictive power.  Make sure you use cross validation to evaluate whether adding in any predictors improves the model, as you cannot trust the training log-loss!  Here are some ideas:
   - Do some creative feature engineering.  Do you think any comparisons between the predictors could be predictive (i.e. a student with a good gpa but a poor gpa score, or the reverse)?
